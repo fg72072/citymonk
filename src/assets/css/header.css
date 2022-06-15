@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 6rem;
+    padding: 1rem 5rem;
     padding-top: 3rem !important;
     position: relative;
 }
@@ -11,11 +11,14 @@ header .header-body .ul{
     list-style: none;
     display: flex;
 }
+.logo-section img{
+    width: 60px;
+}
 .header-body .ul li a{
     text-decoration: none;
-    padding: 0.8rem 1.5rem;
+    padding: 0.5rem 1rem;
     color: var(--white);
-    font-size: 14px;
+    font-size: 13px;
 }
 .header-body .ul li a:hover{
     color: var(--primary);
@@ -23,6 +26,7 @@ header .header-body .ul{
 .header-body .ul li .active{
     border: 1px solid var(--gray);
     border-radius: 30px;
+    padding: 0.5rem 1.5rem !important;
 }
 /* drop down  */
 .custom-dropdown{

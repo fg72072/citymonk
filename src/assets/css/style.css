@@ -82,11 +82,11 @@ body {
     right: 50%;
     bottom: 50%;
     transform: translate(50%, 50%);
-    width: 350px;
+    width: 300px;
 }
 
 .banner-text h1 {
-    font-size: 120px;
+    font-size: 150px;
     color: var(--white);
     font-family: Pixeloperatormono, sans-serif;
 
@@ -104,8 +104,9 @@ body {
 
 .section-title {
     font-family: Pixeloperatormono, sans-serif;
-    font-size: 90px;
+    font-size: 87px;
     color: var(--white);
+    line-height: 0.9;
 }
 
 .list-box {
@@ -114,16 +115,18 @@ body {
 
 .list-box h3 {
     color: var(--white);
-    font-size: 25px;
+    font-size: 17px;
 }
 
 .list-box p {
     color: var(--white);
-    font-size: 14px;
-    width: 430px;
+    font-size: 12.5px;
+    width: 380px;
+    line-height: 1.7;
 }
 .normal-p.p-mt,.normal-p{
-    width: 450px;
+    width: 380px;
+    line-height: 1.7;
 
 }
 .contribute {
@@ -135,7 +138,7 @@ body {
     text-decoration: none;
     display: flex;
     align-items: center;
-    font-size: 16px;
+    font-size: 12.5px;
 }
 
 .normal-btn-with-icon:hover {
@@ -162,7 +165,7 @@ body {
 }
 
 .normal-p {
-    font-size: 16px;
+    font-size: 12.5px;
     color: var(--white);
 }
 .p-mt{
@@ -196,6 +199,7 @@ margin-top: 2rem;
 }
 .roadmap{
     display: flex;
+    margin-top: 3rem;
 }
 .roadmap-text{
     height: 408px;
@@ -241,10 +245,11 @@ background: transparent radial-gradient(closest-side at 50% 50%, #EF8848 0%, #EF
 .roadmap-list{
     list-style: none;
     padding: 0 !important;
+    margin-top: 1rem;
 }
 .roadmap-list li{
     color: var(--white);
-    font-size: 16px;
+    font-size: 13px;
     margin-top: 0.5rem;
 
 }
@@ -293,3 +298,7 @@ label{
 .mobile-social{
     display: none !important;
 }
+.container {
+    padding: 0 2.5rem;
+}
+

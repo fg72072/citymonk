@@ -13,7 +13,7 @@ function Home() {
         {/* third section */}
         <section className="section">
             <Container>
-                <Row>
+                <Row className="align-items-center">
                     <Col lg={6} md={6}>
                         <div className="daul-flex">
                             <h2 id="network-tokenomics" className="section-title">C¥</h2>

@@ -47,7 +47,7 @@ function SliderSection() {
                 <h2 className="section-title">CYBER <br />BROTHERHOOD</h2>
                 <p className="normal-p">OPEN YOUR DAO</p>
                 <div className="mt-5">
-                    <p className="normal-p" style={{fontSize:"22px"}}>Be part of the Cyber Brotherhood</p>
+                    <p className="normal-p" style={{fontSize:"18px"}}>Be part of the Cyber Brotherhood</p>
                     <a href="https://opensea.io/collection/firstcyberbrotherhood" target="_blank" className="normal-btn-with-icon"><span>Get your avatar</span> <img src={arrow}/></a>
                 </div>
                 <Slider {...settings}>

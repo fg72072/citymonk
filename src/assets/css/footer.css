@@ -1,0 +1,48 @@
+footer{
+    padding-top: 5rem;
+}
+footer h3{
+    color: var(--white);
+    font-size: 18px;
+}
+footer .ul{
+    list-style: none;
+    padding: 0;
+}
+footer .ul li{
+    padding: 0.5rem 0;
+}
+footer .ul li a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 14px;
+    opacity: 0.5;
+}
+footer .ul li a:hover{
+    color: var(--primary);
+}
+footer hr{
+    color: var(--white);
+    margin: 1rem 0.7rem;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-links{
+    display: flex;
+    list-style: none;
+}
+.social-links li{
+    padding: 0 0.5rem;
+}
+.social-links li a{
+    color: var(--white);
+}
+.social-links li a:hover{
+    color: var(--primary);
+}
+.footer-bottom div p{
+    font-size: 15px;
+}

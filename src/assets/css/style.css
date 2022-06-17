@@ -65,7 +65,7 @@ body {
 }
 
 .banner-section {
-    height: calc(100vh - 157px);
+    height: calc(100vh - 124px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -202,13 +202,13 @@ margin-top: 2rem;
     margin-top: 3rem;
 }
 .roadmap-text{
-    height: 408px;
+    height: 310px;
     margin-left: 40px;
 }
 .roadmap-stick{
     width: 2px;
     margin-top: 1rem;
-    height: 1224px;
+    height: 930px;
     /* UI Properties */
     background: transparent linear-gradient(180deg, var(---d98863) 0%, #EF8848 21%, #303EF3 33%, #303EF300 100%) 0% 0% no-repeat padding-box;
     background: transparent linear-gradient(180deg, #FF8234 0%, #EF8848 21%, #303EF3 33%, #303EF300 100%) 0% 0% no-repeat padding-box;
@@ -246,6 +246,7 @@ background: transparent radial-gradient(closest-side at 50% 50%, #EF8848 0%, #EF
     list-style: none;
     padding: 0 !important;
     margin-top: 1rem;
+    width: 100%;
 }
 .roadmap-list li{
     color: var(--white);
@@ -302,3 +303,9 @@ label{
     padding: 0 2.5rem;
 }
 
+.common-bottom-padding{
+    padding-bottom: 8rem;
+}
+.get-voting{
+    margin-top: 4rem;
+}

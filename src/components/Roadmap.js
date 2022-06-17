@@ -3,7 +3,7 @@ import { Row, Col, Container } from "react-bootstrap"
 
 function Roadmap() {
     return <>
-        <section className="section" id="roadmap">
+        <section className="section common-bottom-padding mt-5" id="roadmap">
         <div className="secondary-shadow">
 .
                 </div>

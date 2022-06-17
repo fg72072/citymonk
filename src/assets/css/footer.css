@@ -46,3 +46,6 @@ footer hr{
 .footer-bottom div p{
     font-size: 15px;
 }
+.footer-active{
+    opacity: 1 !important;
+    }

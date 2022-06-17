@@ -11,7 +11,7 @@ function Home() {
         <SecondSection />
         {/* end second section  */}
         {/* third section */}
-        <section className="section">
+        <section className="section common-bottom-padding">
             <Container>
                 <Row className="align-items-center">
                     <Col lg={6} md={6}>
@@ -38,7 +38,7 @@ function Home() {
         {/* end slider section  */}
         
         {/* voting power  */}
-        <section className="section bottom-padding">
+        <section className="section bottom-padding get-voting">
             <div className="primary-shadow height-550">
                 .
             </div>

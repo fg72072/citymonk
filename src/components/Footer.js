@@ -44,7 +44,7 @@ function Footer()
                     <h3>RELICTS</h3>
                     <ul className="ul">
                         <li>
-                        <a href="https://github.com/citymonks" target="_blank" className="normal-btn-with-icon"><span>Manifest</span> <img src={arrow}/></a>
+                        <a href="https://github.com/citymonks" target="_blank" className="footer-active normal-btn-with-icon"><span>Manifest</span> <img src={arrow}/></a>
 
                         </li>
                     </ul>

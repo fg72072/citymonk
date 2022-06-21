@@ -4,7 +4,7 @@ import { Row, Col, Container } from "react-bootstrap"
 function Roadmap() {
     return <>
         <section className="section common-bottom-padding mt-5" id="roadmap">
-        <div className="secondary-shadow">
+        <div className="secondary-shadow roadmap-shadow-secondary">
 .
                 </div>
                 <div className="w-100 position-relative">
@@ -39,7 +39,7 @@ function Roadmap() {
                                         <li>
                                         1.5 Twitter, Instagram, Telegram
                                         </li>
-                                        <li>
+                                        {/* <li>
                                         1.6 First Collection Nft - First Cyberbrotherhood;
                                         </li>
                                         <li>
@@ -47,7 +47,7 @@ function Roadmap() {
                                         </li>
                                         <li>
                                         1.8 Dao For The Développement Governance 
-                                        </li>
+                                        </li> */}
                                     </ul>
                                 </div>
                             
@@ -55,21 +55,21 @@ function Roadmap() {
                                     <h3 className="secondary-dot">Stage 2</h3>
                                     <ul className="roadmap-list">
                                         <li>
-                                            1.1 Site Web V1;
+                                            2.1 Site Web V1;
                                         </li>
                                         <li>
-                                        1.2 Governance Token Cimo;
+                                        2.2 Governance Token Cimo;
                                         </li>
                                         <li>
-                                        1.3 Web Forum Http://Synod.Citymonk.Io;
+                                        2.3 Web Forum Http://Synod.Citymonk.Io;
                                         </li>
                                         <li>
-                                        1.4 Profile Citymonk On Snapshot (Offchain Voting) With Token Cimo Integration;
+                                        2.4 Profile Citymonk On Snapshot (Offchain Voting) With Token Cimo Integration;
                                         </li>
                                         <li>
-                                        1.5 Twitter, Instagram, Telegram
+                                        2.5 Twitter, Instagram, Telegram
                                         </li>
-                                        <li>
+                                        {/* <li>
                                         1.6 First Collection Nft - First Cyberbrotherhood;
                                         </li>
                                         <li>
@@ -77,7 +77,7 @@ function Roadmap() {
                                         </li>
                                         <li>
                                         1.8 Dao For The Développement Governance 
-                                        </li>
+                                        </li> */}
                                     </ul>
                                 </div>
                             
@@ -85,21 +85,21 @@ function Roadmap() {
                                     <h3 className="secondary-dot">Stage 3</h3>
                                     <ul className="roadmap-list">
                                         <li>
-                                            1.1 Site Web V1;
+                                            3.1 Site Web V1;
                                         </li>
                                         <li>
-                                        1.2 Governance Token Cimo;
+                                        3.2 Governance Token Cimo;
                                         </li>
                                         <li>
-                                        1.3 Web Forum Http://Synod.Citymonk.Io;
+                                        3.3 Web Forum Http://Synod.Citymonk.Io;
                                         </li>
                                         <li>
-                                        1.4 Profile Citymonk On Snapshot (Offchain Voting) With Token Cimo Integration;
+                                        3.4 Profile Citymonk On Snapshot (Offchain Voting) With Token Cimo Integration;
                                         </li>
                                         <li>
-                                        1.5 Twitter, Instagram, Telegram
+                                        3.5 Twitter, Instagram, Telegram
                                         </li>
-                                        <li>
+                                        {/* <li>
                                         1.6 First Collection Nft - First Cyberbrotherhood;
                                         </li>
                                         <li>
@@ -107,7 +107,7 @@ function Roadmap() {
                                         </li>
                                         <li>
                                         1.8 Dao For The Développement Governance 
-                                        </li>
+                                        </li> */}
                                     </ul>
                                 </div>
                               

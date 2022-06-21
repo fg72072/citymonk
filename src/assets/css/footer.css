@@ -3,7 +3,7 @@ footer{
 }
 footer h3{
     color: var(--white);
-    font-size: 18px;
+    font-size: 17px;
 }
 footer .ul{
     list-style: none;
@@ -15,7 +15,7 @@ footer .ul li{
 footer .ul li a{
     text-decoration: none;
     color: var(--white);
-    font-size: 13px;
+    font-size: 12px;
     opacity: 0.5;
 }
 footer .ul li a:hover{

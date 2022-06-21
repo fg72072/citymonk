@@ -27,45 +27,54 @@ body {
 
 .shadow {
     position: absolute;
-    top: -500px;
-    left: -500px;
-    width: 1000px;
-    height: 1000px;
+    top: -800px;
+    left: -800px;
+    width: 1400px;
+    height: 1500px;
     opacity: 0.6;
+    z-index: -1;
     background: transparent radial-gradient(closest-side at 50% 50%, #3139FD 0%, #191D7F00 100%) 0% 0% no-repeat padding-box;
 }
 
 .primary-shadow {
     position: absolute;
-    top: 0px;
-    right: -350px;
-    width: 700px;
-    height: 700px;
+    top: -300px;
+    right: -500px;
+    width: 900px;
+    height: 1000px;
     opacity: 0.6;
+    z-index: -1;
 
     background: transparent radial-gradient(closest-side at 50% 50%, #EF8848 0%, #EF884800 100%) 0% 0% no-repeat padding-box;
 }
 .secondary-shadow{
     position: absolute;
     z-index: -1;
-    top: 0px;
-    left: -250px;
-    width: 800px;
-    height: 800px;
+    top: -200px;
+    left: -500px;
+    width: 1000px;
+    height: 1000px;
     opacity: 0.6;
     background: transparent radial-gradient(closest-side at 50% 50%, #3139FD 0%, #191D7F00 100%) 0% 0% no-repeat padding-box;
 
 }
-
+.height-550{
+    top: -450px !important;
+    right: -450px !important;
+    width: 850px !important;
+    height: 900px !important;
+    z-index: -1;
+}
 .section {
     position: relative;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow-x: clip;
 
 }
 
 .banner-section {
-    height: calc(100vh - 124px);
+    height: calc(100vh - 107.99px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,13 +91,14 @@ body {
     right: 50%;
     bottom: 50%;
     transform: translate(50%, 50%);
-    width: 300px;
+    width: 240px;
 }
 
 .banner-text h1 {
-    font-size: 150px;
+    font-size: 130px;
     color: var(--white);
     font-family: Pixeloperatormono, sans-serif;
+    line-height: 0.8;
 
 }
 
@@ -99,12 +109,15 @@ body {
 
 .banner-text .flex-text p {
     color: var(--white);
-    font-family: Pixeloperatormono, sans-serif;
+    font-size: 11px;
+    font-family: Poppins;
 }
-
+.second-sec{
+    padding-top: 7rem;
+}
 .section-title {
     font-family: Pixeloperatormono, sans-serif;
-    font-size: 87px;
+    font-size: 95px;
     color: var(--white);
     line-height: 0.9;
 }
@@ -188,7 +201,8 @@ body {
     outline: none !important;
 }
 .slider-box img{
-width: 95%;
+    width: 90%;
+    height: 350px;
 margin-top: 2rem;
 }
 .btn-group-colum{
@@ -202,13 +216,13 @@ margin-top: 2rem;
     margin-top: 3rem;
 }
 .roadmap-text{
-    height: 310px;
+    height: 220px;
     margin-left: 40px;
 }
 .roadmap-stick{
     width: 2px;
     margin-top: 1rem;
-    height: 930px;
+    height: 660px;
     /* UI Properties */
     background: transparent linear-gradient(180deg, var(---d98863) 0%, #EF8848 21%, #303EF3 33%, #303EF300 100%) 0% 0% no-repeat padding-box;
     background: transparent linear-gradient(180deg, #FF8234 0%, #EF8848 21%, #303EF3 33%, #303EF300 100%) 0% 0% no-repeat padding-box;
@@ -234,7 +248,10 @@ background: transparent radial-gradient(closest-side at 50% 50%, #EF8848 0%, #EF
     background: transparent radial-gradient(closest-side at 50% 50%, #303EF3 0%, #303EF300 100%) 0% 0% no-repeat padding-box;
 }
 .margin-top-shadow{
-    margin-top: 600px;
+    margin-top: 400px;
+}
+.roadmap-shadow-secondary{
+    top: -500px !important;
 }
 
 .roadmap-text h3{
@@ -258,10 +275,13 @@ background: transparent radial-gradient(closest-side at 50% 50%, #EF8848 0%, #EF
     opacity: 0.3 !important;
 
 }
-
+.subscription-shadow{
+    top: -300px;
+}
 .custom-from-group{
     margin-top: 2.5rem;
     font-size: 32px;
+    padding-right: 2rem;
 }
 .custom-from-group-placeholder{
     font-size: 18px;
@@ -300,7 +320,7 @@ label{
     display: none !important;
 }
 .container {
-    padding: 0 2.5rem;
+    /* padding: 0 0.5rem; */
 }
 
 .common-bottom-padding{

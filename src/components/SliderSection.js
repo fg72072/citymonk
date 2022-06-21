@@ -12,7 +12,7 @@ function SliderSection() {
         autoplaySpeed:1000,
         autoplay:true,
         draggable:true,
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
         responsive: [
             {

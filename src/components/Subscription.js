@@ -4,7 +4,7 @@ import { arrow } from "./Images"
 function Subscription() {
     return <>
         <section className="section bottom-padding">
-            <div className="secondary-shadow">
+            <div className="secondary-shadow subscription-shadow">
                 .
             </div>
             <Container>
@@ -27,7 +27,7 @@ function Subscription() {
                         </Col>
                         <Col lg={5} md={6}>
                             <Form.Group className="custom-from-group" controlId="email">
-                                <Form.Label>E-EMAIL</Form.Label>
+                                <Form.Label>E-MAIL</Form.Label>
                                 <Form.Control type="email" className="custom-from-group-placeholder"placeholder="John.doe@gmail.com" />
                             </Form.Group>
                         </Col>

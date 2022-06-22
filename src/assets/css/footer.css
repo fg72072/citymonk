@@ -1,9 +1,15 @@
 footer{
     padding-top: 5rem;
 }
+.custom-row{
+    display: flex;
+}
+.custom-row .custom-col{
+    width: 250px;
+}
 footer h3{
     color: var(--white);
-    font-size: 17px;
+    font-size: 15px;
 }
 footer .ul{
     list-style: none;
@@ -15,7 +21,7 @@ footer .ul li{
 footer .ul li a{
     text-decoration: none;
     color: var(--white);
-    font-size: 12px;
+    font-size: 11.5px;
     opacity: 0.5;
 }
 footer .ul li a:hover{
@@ -23,7 +29,8 @@ footer .ul li a:hover{
 }
 footer hr{
     color: var(--white);
-    margin: 1rem 0.7rem;
+    /* margin: 1rem 0.7rem; */
+    margin: 1rem 0rem;
 }
 .footer-bottom{
     display: flex;

@@ -7,7 +7,7 @@ function Subscription() {
             <div className="secondary-shadow subscription-shadow">
                 .
             </div>
-            <Container>
+            <Container fluid>
                 <h2 className="section-title">
                     SUBSCRIBE
                 </h2>

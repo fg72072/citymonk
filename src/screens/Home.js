@@ -12,7 +12,7 @@ function Home() {
         {/* end second section  */}
         {/* third section */}
         <section className="section common-bottom-padding">
-            <Container>
+            <Container fluid>
                 <Row className="align-items-center">
                     <Col lg={6} md={6}>
                         <div className="daul-flex">
@@ -42,7 +42,7 @@ function Home() {
             <div className="primary-shadow height-550">
                 .
             </div>
-            <Container>
+            <Container fluid>
                 <Row>
                     <Col lg={8}>
                     <h2 className="section-title">GET THE <br/>VOTING POWER</h2>

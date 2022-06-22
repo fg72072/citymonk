@@ -12,7 +12,7 @@ function Roadmap() {
 .
                 </div>
                 </div>
-            <Container>
+            <Container fluid>
                
                 <h2 id="network-roadmap" className="section-title">ROADMAP</h2>
                 <Row>

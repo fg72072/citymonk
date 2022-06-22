@@ -61,16 +61,29 @@
 }
 
 /* Extra Small Devices, Phones */
-@media  (max-width : 480px) {}
+@media  (max-width : 480px) {
+     /* .container-fluid{
+        padding: 1rem !important;
+    } */
+    /* .slider-container{
+        padding: 0 2rem !important;
+    } */
+}
 
 
 /* Tablets */
 @media  (max-width : 767px) {
+    .custom-row{
+        flex-direction: column;
+    }
+    .custom-row .custom-col{
+        margin-top: 1rem;
+    }
     .banner-img{
         width: 250px;
     }
     .slider-box img{
-        width: 100%;
+        width: 93%;
     }
     .banner-text h1{
         font-size: 80px;
@@ -82,6 +95,19 @@
         top: -500px;
         left: -300px;
         width: 620px;
+        height: 800px;
+    }
+    .primary-shadow{
+        width: 750px;
+        height: 600px;
+    }
+    .secondary-shadow {
+        width: 750px;
+        height: 600px;
+    }
+    .height-550{
+        width: 750px !important;
+        height: 600px !important;  
     }
     footer hr{
         margin: 1rem 0 !important;
@@ -108,8 +134,12 @@
     .roadmap-list li {
         font-size: 15px;
     }
+    .roadmap-stick{
+        height: 930px;
+    }
     .roadmap-text {
         margin-left: 15px;
+        height: 310px;
     }
     .roadmap-text h3::after {
         left: -32px;
@@ -143,6 +173,12 @@
 
 /* Tablets */
 @media  (max-width : 991px) {
+    .container-fluid{
+        padding: 0 2rem;
+    }
+    .slider-container{
+        padding-left: 2rem;
+    }
     /* header  */
     .custom-header {
         padding: 1rem 2rem !important;

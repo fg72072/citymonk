@@ -9,7 +9,7 @@ function SecondSection()
             <div className="primary-shadow">
                 .
             </div>
-            <Container>
+            <Container fluid>
             <h2 id="network-about" className="section-title">CITYMONK<br/>NETWORK</h2>
 
                 <Row>

@@ -79,6 +79,10 @@
     .custom-row .custom-col{
         margin-top: 1rem;
     }
+    .banner-text{
+        width: 100% !important;
+        min-width: 100% !important;
+    }
     .banner-img{
         width: 250px;
     }
@@ -87,6 +91,7 @@
     }
     .banner-text h1{
         font-size: 80px;
+        margin-bottom: 0;
     }
     .container {
         padding: 0 1.5rem;
@@ -125,14 +130,23 @@
         font-size: 50px;
     }
     .list-box p {
-        font-size: 15px;
+        /* font-size: 15px; */
     }
     .list-box h3 {
         color: var(--white);
-        font-size: 22px;
+        /* font-size: 22px; */
     }
     .roadmap-list li {
-        font-size: 15px;
+        /* font-size: 15px; */
+    }
+    .daul-flex sub{
+        margin-left: 0.7rem;
+    }
+    .mobile-padding{
+        padding-bottom: 0;
+    }
+    footer{
+        padding-top: 0 !important;
     }
     .roadmap-stick{
         height: 930px;
@@ -154,7 +168,11 @@
         width: 100%;
     }
     .social-links li a{
-        font-size: 25px;
+        font-size: 15px;
+    }
+    .footer-bottom div p{
+        opacity: 0.6;
+        font-size: 14px !important;
     }
     .footer-bottom div{
         order: 2;
@@ -162,17 +180,36 @@
     .second-sec{
         padding-top: 5rem;
     }
-    .roadmap-text:not(:first-child) {
+    /* .roadmap-text:not(:first-child) {
         opacity: 1 !important;
-    }
+    } */
     .height-550{
         height: 550px;
+    }
+    .section-top-p{
+        padding-top: 0;
     }
 }
 
 
 /* Tablets */
 @media  (max-width : 991px) {
+    .c-desktop{
+        display: none;
+    }
+    .c-mobile{
+        display: block;
+        width: 250px !important;
+        height: 190px !important;
+        margin-top: 2rem;
+    }
+    .c-img-section{
+        width: 250px !important;
+        height: 190px !important;
+    }
+    .banner-section {
+        height: calc(100vh - 124px);
+    }
     .container-fluid{
         padding: 0 2rem;
     }
@@ -180,7 +217,7 @@
         padding-left: 2rem;
     }
     /* header  */
-    .custom-header {
+    header .custom-header {
         padding: 1rem 2rem !important;
         padding-top: 2rem !important;
     }
@@ -226,6 +263,7 @@
     .mobile-head-open{
         display: block !important;
         color: var(--white);
+        width: 30px;
     }
     .head-flex{
         display: flex;
@@ -280,8 +318,10 @@
 
     .list-box p,.normal-p.p-mt,.normal-p {
         color: var(--white);
-        font-size: 14px;
-        width: auto;
+        width: 213px;
+    }
+    ul.normal-p{
+        width: auto !important;
     }
 }
 

@@ -1,7 +1,7 @@
 import { memo } from "react";
 import { Container } from "react-bootstrap"
 import Slider from "react-slick/lib/slider";
-import { arrow, NFT1 } from "./Images";
+import { arrow, NFT1, NFT2, NFT3, NFT4, NFT5, NFT6, NFT7 } from "./Images";
 
 function SliderSection() {
     const settings = {
@@ -54,22 +54,53 @@ function SliderSection() {
             <div className="slider-container">
             <Slider {...settings}>
                 <div className="slider-box">
+                <div className="slider-inner">
                     <img src={NFT1} />
+                    <div className="shadow">
+                    </div>
+                    </div>
                 </div>
                 <div className="slider-box">
-                    <img src={NFT1} />
+                <div className="slider-inner">
+                    <img src={NFT2} />
+                    <div className="shadow">
+                    </div>
+                    </div>
                 </div>
                 <div className="slider-box">
-                    <img src={NFT1} />
+                <div className="slider-inner">
+                    <img src={NFT3} />
+                    <div className="shadow">
+                    </div>
+                    </div>
                 </div>
                 <div className="slider-box">
-                    <img src={NFT1} />
+                <div className="slider-inner">
+                    <img src={NFT4} />
+                    <div className="shadow">
+                    </div>
+                    </div>
                 </div>
                 <div className="slider-box">
-                    <img src={NFT1} />
+                <div className="slider-inner">
+                    <img src={NFT5} />
+                    <div className="shadow">
+                    </div>
+                    </div>
                 </div>
                 <div className="slider-box">
-                    <img src={NFT1} />
+                <div className="slider-inner">
+                    <img src={NFT6} />
+                    <div className="shadow">
+                    </div>
+                    </div>
+                </div>
+                <div className="slider-box">
+                    <div className="slider-inner">
+                    <img src={NFT7} />
+                    <div className="shadow">
+                    </div>
+                    </div>
                 </div>
             </Slider>
             </div>

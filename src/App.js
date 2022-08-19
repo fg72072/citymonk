@@ -3,23 +3,20 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import { Header } from './components';
 import { Home } from './screens';
-import { useEagerConnect, useInactiveListener } from './hooks/useEagerConnect';
+
 import GlobalState from './Context';
 function App() {
-  const [errorMessage, setErrorMessage] = useState();
-  useEagerConnect(setErrorMessage);
-  useInactiveListener();
+ 
   const [isShow, setIsShow] = useState(false)
-
   return (
     <GlobalState.Provider value={{isShow:isShow,setIsShow:setIsShow}}>
-
-      <div className="App">
-        {
+{/* if (navigator.userAgent.indexOf('Mac OS X') != -1) { */}
+      <div className={"App " +(window.navigator.userAgent.indexOf('Mac OS X') != -1 ? "mac" : "pc")}>
+        {/* {
           errorMessage ? <div style={{ color: "red" }}>{errorMessage}</div> : null
-        }
+        } */}
         <BrowserRouter>
-          <Header setErrorMessage={setErrorMessage} />
+          <Header />
           <Routes>
             <Route path='/' element={<Home />} />
           </Routes>

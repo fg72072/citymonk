@@ -1,75 +1,11 @@
 import { Link, NavLink } from "react-router-dom"
-import { logo } from "./Images"
+import { closeicon, logo, showicon } from "./Images"
 import '../assets/css/header.css'
 import { memo, useContext, useState } from "react"
 import GlobalState from "../Context"
-import Onboard from 'bnc-onboard';
 function Header() {
     const [connect, setConnect] = useState(false)
     const { isShow, setIsShow } = useContext(GlobalState)
-    const connectWalletPressed = async () => {
-        const onboard = Onboard({
-          dappId: 'e5dce034-797e-4871-8a93-ef69730dca19', //e5dce034-797e-4871-8a93-ef69730dca19
-          networkId: 1,
-          darkMode: true,
-          subscriptions: {
-            wallet: async (wallet) => {
-              if (wallet.provider) {
-                setConnect(true)
-              } else {
-                setConnect(false)
-              }
-            }
-          },
-          // walletSelect: {
-          //   wallets: [{
-          //     walletName: 'metamask'
-          //   }]
-          // }
-          walletSelect: {
-            wallets:[
-              {
-                walletName: "metamask",
-                preferred: true,
-              },
-              {
-                walletName: "trust",
-                preferred: true,
-              },
-              {
-                walletName: 'walletConnect',
-                preferred: true,
-                infuraKey: 'cea9deb6467748b0b81b920b005c10c1',
-                bridge: 'https://bridge.walletconnect.org',
-              },
-              {
-                walletName: 'torus',
-              },
-              {
-                walletName: 'tally',
-              },
-              {
-                walletName: 'status',
-              },
-              {
-                walletName: 'alphawallet',
-              },
-              {
-                walletName: 'atoken',
-              },
-              {
-                walletName: 'blockwallet',
-              },
-              {
-                walletName: 'coinbase',
-              }
-            ]
-          }
-        })
-        await onboard.walletSelect()
-        await onboard.walletCheck()
-    
-      };
     return <>
         <header>
             <div className="shadow">
@@ -80,17 +16,17 @@ function Header() {
                     <div className="logo-section">
                         <img src={logo} />
                     </div>
-                    <i class="fa-solid fa-bars mobile-head-open" onClick={(e) => setIsShow(true)}></i>
+                    <img src={showicon} className="mobile-head-open" onClick={(e) => setIsShow(true)}/>
                 </div>
                 <div className="header-100-vh">
                 <div className={isShow ? "header-body nav-open" : "header-body nav-close"}>
                     <div className="mobile-head">
-                        <img src={logo} />
-                        <i class="fa-solid fa-close" onClick={(e) => setIsShow(false)}></i>
+                        <img src={logo} className="sm-logo"/>
+                        <img src={closeicon} className="close-icon" onClick={(e) => setIsShow(false)}/>
                     </div>
                     <ul className="ul">
                         <li className="custom-order-3">
-                            <NavLink to={"/"}>Manifest</NavLink>
+                            <a href="https://github.com/citymonks" target="_blank" className="active">Manifest</a>
                         </li>
                         <li className="custom-order-1">
                             <div className="custom-dropdown">
@@ -98,13 +34,13 @@ function Header() {
                                 <div className="dropdown-body">
                                     <ul>
                                         <li>
-                                            <a href="#network-about">ABOUT</a>
+                                            <a href="#network-about">About</a>
                                         </li>
                                         <li>
-                                            <a href="#network-tokenomics">TOKENOMICS</a>
+                                            <a href="#network-tokenomics">Tokenomics</a>
                                         </li>
                                         <li>
-                                            <a href="#network-roadmap">ROADMAP</a>
+                                            <a href="#network-roadmap">Roadmap</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -116,16 +52,16 @@ function Header() {
                             <div className="dropdown-body">
                                     <ul>
                                         <li>
-                                            <a href="https://opensea.io/citymonk" target="_blank">LABS</a>
+                                            <a href="https://opensea.io/citymonk" target="_blank">Labs</a>
                                         </li>
                                         <li>
-                                            <a href="https://synod.citymonk.io/" target="_blank">SYNOD</a>
+                                            <a href="https://synod.citymonk.io/" target="_blank">Synod</a>
                                         </li>
                                         <li>
-                                            <a href="https://snapshot.io/#/citymonk" target="_blank">VOTING</a>
+                                            <a href="https://snapshot.io/#/citymonk" target="_blank">Voting</a>
                                         </li>
                                         <li>
-                                            <a href="mailto:hello@citymonk.io" target="_blank">CAREER</a>
+                                            <a href="mailto:hello@citymonk.io" target="_blank">Careers</a>
                                         </li>
                                     </ul>
                                 </div>

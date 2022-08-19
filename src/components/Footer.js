@@ -37,7 +37,7 @@ function Footer() {
                                     <a href="https://snapshot.io/#/citymonk" target="_blank">VOTING</a>
                                 </li>
                                 <li>
-                                    <a href="mailto:hello@citymonk.io" target="_blank">CAREER</a>
+                                    <a href="mailto:hello@citymonk.io" target="_blank">CAREERS</a>
                                 </li>
                             </ul>
                         </div>

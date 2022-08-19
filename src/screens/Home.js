@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap"
 import { Banner, Footer, Roadmap, SecondSection, SliderSection, Subscription } from "../components"
-import { arrow, c } from "../components/Images"
+import { arrow, c, cmobile } from "../components/Images"
 
 function Home() {
     return <main>
@@ -25,7 +25,9 @@ function Home() {
                     </Col>
                     <Col lg={6} md={6}>
                         <div className="c-img-section">
-                        <img src={c} />
+                        <img src={c} className="c-desktop"/>
+                        <img src={cmobile} className="c-mobile"/>
+                        
                         </div>
                     </Col>
                 </Row>

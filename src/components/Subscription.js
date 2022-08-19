@@ -1,5 +1,11 @@
 import { Container, Form, Row,Col } from "react-bootstrap"
 import { arrow } from "./Images"
+import MailchimpSubscribe from "react-mailchimp-subscribe"
+import { memo, useMemo, useState } from "react";
+import CustomForm from "./MailForm";
+
+const url = process.env.REACT_APP_MAILCHIP;
+
 
 function Subscription() {
     return <>
@@ -11,37 +17,34 @@ function Subscription() {
                 <h2 className="section-title">
                     SUBSCRIBE
                 </h2>
-                <Form>
-                    <Row>
-                        <Col lg={5} md={6}>
-                            <Form.Group className="custom-from-group" controlId="prenom">
-                                <Form.Label>PRENOM</Form.Label>
-                                <Form.Control type="text" className="custom-from-group-placeholder" placeholder="John" />
-                            </Form.Group>
-                        </Col>
-                        <Col lg={5} md={6}>
-                            <Form.Group className="custom-from-group" controlId="nom">
-                                <Form.Label>NOM</Form.Label>
-                                <Form.Control type="text" className="custom-from-group-placeholder" placeholder="Doe" />
-                            </Form.Group>
-                        </Col>
-                        <Col lg={5} md={6}>
-                            <Form.Group className="custom-from-group" controlId="email">
-                                <Form.Label>E-MAIL</Form.Label>
-                                <Form.Control type="email" className="custom-from-group-placeholder"placeholder="John.doe@gmail.com" />
-                            </Form.Group>
-                        </Col>
-                            <div className="custom-from-group mt-5">
-                            <a href="#" className="normal-btn-with-icon mt-4"><span>Submit</span> <img src={arrow}/></a>
-                            </div>
-                    </Row>
-                </Form>
+          
+                <MailchimpSubscribe
+                    url={url}
+                    render={({ subscribe, status, message,onValidated }) => (
+                        <CustomForm
+                            status={status}
+                            message={message}
+                            onValidated={formData => subscribe(formData)}
+                />
+            )}
+        />
+                    {/* <MailchimpSubscribe
+        url={url}
+        render={({ subscribe, status, message }) => (
+        <div>
+            <SimpleForm onSubmitted={formData => subscribe(formData)} />
+            {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
+            {status === "error" && <div style={{ color: "red" }} dangerouslySetInnerHTML={{__html: message}}/>}
+            {status === "success" && <div style={{ color: "green" }}>Subscribed !</div>}
+        </div>
+        )}
+    /> */}
             </Container>
-            <div className="bottom-padding">
+            <div className="bottom-padding mobile-padding">
 
             </div>
         </section>
     </>
 }
 
-export default Subscription
+export default memo(Subscription)
